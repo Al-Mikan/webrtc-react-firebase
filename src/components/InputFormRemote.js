@@ -23,8 +23,8 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function InputFormLocal() {
-  const label='あなたの名前'
+export default function InputFormRemote({remotePeerName,setRemotePeerName}) {
+  const label='相手の名前'
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
